@@ -11,7 +11,9 @@ src/MatrixAnimationGUI.java - Topic 2: Live Swing GUI animation of threads
 README.md - Documentation and execution guide
 
 1. Producer-Consumer Problem
+
 Overview
+
 Demonstrates thread synchronization and inter-thread communication using a shared bounded buffer.
 
 Shared Buffer: Bounded queue with a maximum capacity of 3 items.
@@ -23,11 +25,15 @@ Signaling: wait() and notifyAll() inside guarded condition loops (while) to prev
 Rate Pacing: The Producer operates at 400 ms intervals while the Consumer runs at 800 ms intervals, explicitly triggering buffer saturation to verify backpressure handling.
 
 How to Run
+
 Bash
 javac src/ProducerConsumerDemo.java
 java -cp src ProducerConsumerDemo
+
 2. Multi-Threaded 100x100 Matrix Multiplication & Animation
+
 Overview
+
 Performs parallel matrix multiplication (C = A x B) across two 100x100 matrices.
 
 Independent Execution Units: Every output cell C[i][j] is calculated as an isolated thread task (total of 10,000 tasks).
